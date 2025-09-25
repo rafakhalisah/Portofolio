@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="togglePopup()">
+      <img src="./img/kosong.jpg" alt="Profile">
+    <span><b>  Rafa's Profile</b></span>
+    </div>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Popup Biodata -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="togglePopup()">&times;</span>
+      <h3>Biodata</h3>
+      <p><b>Nama:</b> Khalisah Rafa Nadirah</p>
+      <p><b>Umur:</b> 19</p>
+      <p><b>Tempat, Tanggal Lahir:</b> Jember, 17 Maret 2006</p>
+      <p><b>Alamat:</b> Jember, Jalan Sumatra VI No. 45 </p>
+      <p><b>Pekerjaan:</b> Mahasiswa</p>
+    </div>
+  </div>
+
+  <section id="home" class="hero">
+    <h1>Hai, Aku Kalisah Rafa Nadirah</h1>
+    <p>Mahasiswa semester 3 Jurusan Teknologi Informasi Fakulatas Ilmu Komputer, Universitas Jember</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>ABOUT ME</h2>
+    <div class="about-content">
+      <div class="left">
+        <img src="./img/Khalisah Rafa Nadirah.jpg"  alt="About Me Photo">
+        <h3>Get to know me!</h3>
+        <p>Saya adalah mahasiswa Jurusan Teknologi Informasi, Fakultas Ilmu Komputer, Universitas Jember angkatan 2024. Saat ini saya sedang menempuh pendidikan dengan minat yang besar pada bidang web development. Ketertarikan saya pada dunia teknologi, khususnya pengembangan web, berawal dari rasa ingin tahu bagaimana sebuah situs dapat dibangun dan memberikan pengalaman yang bermanfaat bagi penggunanya. Hal tersebut mendorong saya untuk terus belajar dan mendalami keterampilan teknis dalam merancang, mengembangkan, dan mengoptimalkan aplikasi berbasis web.</p>
+        <p>Fokus utama saya adalah mempelajari dasar-dasar pengembangan front-end dan back-end. Dari sisi front-end, saya tertarik untuk memahami bagaimana membangun tampilan antarmuka yang tidak hanya menarik secara visual, tetapi juga responsif dan mudah digunakan. Sementara itu, dari sisi back-end, saya ingin memahami bagaimana sistem bekerja di balik layar, termasuk bagaimana data dikelola dan diintegrasikan untuk mendukung fungsionalitas website.</p>
+      </div>
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Basic Python</li>
+          <li>Basic C#</li>
+          <li>Basic HTML</li>
+          <li>Basic PostgreSQL</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>PROJECTS</h2>
+    <ul class="projects-list">
+      <li><b>Aplikasi PlantTani</b></li>
+      <p> <b>PlantTani</b> adalah aplikasi yang dibangun menggunakan bahasa pemrograman <b>Python</b> dengan tujuan membantu petani dalam mencatat dan mengelola data pertanian. Sistem ini mendukung pencatatan lahan, tanaman, kebutuhan pupuk, pestisida, hingga peralatan pertanian. Data disimpan dalam format CSV sehingga tetap sederhana namun rapi dan transparan. Fitur utama PlantTani adalah pencatatan transaksi operasional pertanian serta rekapitulasi agar petani dapat memantau aktivitas mereka secara lebih teratur.</p>
+      <p>Melalui project ini, saya membuktikan keterampilan dalam menggunakan Python untuk membangun aplikasi berbasis data. Saya berhasil menerapkan manajemen file CSV, logika bisnis sederhana, serta struktur program yang jelas..</p>
+      <li><b>Aplikasi Pengelolaan Sistem Manajemen Panti Asuhan "Asuh.in"</b></li>
+      <b>"Asuh.in"</b> adalah aplikasi desktop yang dibangun menggunakan <b>C#</b> dengan basis data PostgreSQL. Aplikasi ini dirancang untuk menjawab permasalahan nyata di panti asuhan yang masih mengelola data secara manual, seperti kesalahan pencatatan, kehilangan arsip, serta kesulitan dalam membuat laporan. Melalui sistem digital yang terstruktur, “Asuh.in” mampu meningkatkan efisiensi, transparansi, dan akuntabilitas dalam pengelolaan data anak asuh, donatur, inventaris, kegiatan, serta keuangan sederhana.</p>
+
+      <p>Dalam pengembangan project ini, saya mengimplementasikan kemampuan dalam merancang aplikasi berbasis Object Oriented Programming (OOP), menyusun modul untuk berbagai jenis pengguna (admin, pengurus panti, bendahara, dan donatur), serta mengintegrasikan sistem dengan database relasional.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>CONTACT</h2>
+    <p>Email: nadirahkhalisahrafa@email.com</p>
+    <p></p>
+    <h2>REVIEW ME</h2>
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+      <label>Message</label>
+      <textarea placeholder="Enter your message"></textarea>
+      <button type="submit" class="btn">SUBMIT</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
